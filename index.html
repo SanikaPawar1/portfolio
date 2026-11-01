@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic page information helps browsers and search engines understand the site. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sanika Pawar is an aspiring full-stack developer and UI/UX designer in Pune, India. Explore her projects, skills, experience, and contact details.">
+  <title>Sanika Pawar | Aspiring Full-Stack Developer</title>
+
+  <!-- Use the only external resource allowed: the Inter font stylesheet. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- An inline SVG favicon avoids a separate favicon.ico request. -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%234A8B84'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='34' font-weight='700' fill='white'%3ES%3C/text%3E%3C/svg%3E">
+
+  <!-- These local files contain the page styles and interactions. -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <!-- The sticky header contains the site navigation and theme controls. -->
+  <header class="site-header">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Sanika Pawar, home">SP<span>.</span></a>
+
+      <!-- The menu button is visible on small screens and controlled by JavaScript. -->
+      <button class="menu-toggle icon-button" type="button" aria-label="Open navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"></path>
+        </svg>
+      </button>
+
+      <!-- Each navigation link points to a real section on this page. -->
+      <div class="site-nav">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#achievements">Achievements</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+
+      <!-- The button has no visible text, so its accessible name is provided by aria-label. -->
+      <button class="theme-toggle icon-button" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+        <svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- The hero introduces Sanika and places the photo first on mobile. -->
+    <section class="hero-section page-container" id="home" aria-labelledby="hero-title">
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-glow" aria-hidden="true"></div>
+        <img class="hero-photo" src="assets/profile.png" alt="Portrait of Sanika Pawar">
+      </div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Aspiring Full-Stack Developer <span aria-hidden="true">·</span> UI/UX <span aria-hidden="true">·</span> AI-curious problem solver</p>
+        <h1 id="hero-title">Hi, I’m Sanika Pawar.</h1>
+        <p class="hero-intro">I turn ideas into clean, usable web experiences.</p>
+        <p class="hero-location">Based in Pune, Maharashtra, India</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">View Projects</a>
+          <a class="button button-secondary" href="assets/Resume_Sanika_Pawar.pdf" download>Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About combines a short personal introduction and quick facts. -->
+    <section class="content-section page-container" id="about" aria-labelledby="about-title">
+      <div class="section-heading reveal">
+        <p class="section-kicker">A little about me</p>
+        <h2 class="section-title" id="about-title">Curious by nature, thoughtful by design.</h2>
+      </div>
+      <div class="about-layout reveal">
+        <div class="about-copy">
+          <p>I’m a final-year Electronics and Telecommunication student who loves exploring new technologies and solving real problems.</p>
+          <p>Through a UI/UX internship, hackathons, and academic projects, I’ve explored frontend development, design, and web applications in healthcare, accessibility, and career guidance.</p>
+          <p>I’m interested in building scalable, user-centric digital solutions that make a meaningful impact.</p>
+          <p class="education-note"><strong>Education:</strong> B.Tech in Electronics &amp; Telecommunication, Vishwakarma Institute of Information Technology (VIIT), Pune (2023–2027) · CGPA 8.13</p>
+        </div>
+        <div class="quick-facts" aria-label="Quick facts">
+          <article class="fact-card">
+            <span class="fact-value">Pune</span>
+            <span class="fact-label">India</span>
+          </article>
+          <article class="fact-card">
+            <span class="fact-value">Final year</span>
+            <span class="fact-label">B.Tech student</span>
+          </article>
+          <article class="fact-card">
+            <span class="fact-value">8.13</span>
+            <span class="fact-label">CGPA</span>
+          </article>
+          <article class="fact-card">
+            <span class="fact-value">Open to</span>
+            <span class="fact-label">Internships and entry-level roles</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill groups make related skills easy to scan. -->
+    <section class="content-section section-soft" id="skills" aria-labelledby="skills-title">
+      <div class="page-container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">What I work with</p>
+          <h2 class="section-title" id="skills-title">Skills &amp; tools</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <h3>Languages</h3>
+            <div class="tag-list"><span class="skill-tag">C++</span><span class="skill-tag">JavaScript</span><span class="skill-tag">Python</span><span class="skill-tag">SQL</span></div>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Web</h3>
+            <div class="tag-list"><span class="skill-tag">HTML</span><span class="skill-tag">CSS</span><span class="skill-tag">JavaScript</span><span class="skill-tag">React.js (basics)</span><span class="skill-tag">MERN stack</span></div>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Design</h3>
+            <div class="tag-list"><span class="skill-tag">Figma</span><span class="skill-tag">Canva</span><span class="skill-tag">Wireframing</span><span class="skill-tag">Prototyping</span><span class="skill-tag">User Research</span></div>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Computer Science Core</h3>
+            <div class="tag-list"><span class="skill-tag">DSA</span><span class="skill-tag">DBMS</span><span class="skill-tag">OS</span><span class="skill-tag">Computer Networks</span><span class="skill-tag">OOPs</span></div>
+          </article>
+          <article class="skill-card reveal">
+            <h3>AI / ML</h3>
+            <div class="tag-list"><span class="skill-tag">Machine Learning (basics)</span></div>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Tools</h3>
+            <div class="tag-list"><span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span class="skill-tag">VS Code</span><span class="skill-tag">Power BI</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project buttons filter cards using their data-category values. -->
+    <section class="content-section page-container" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Selected work</p>
+        <h2 class="section-title" id="projects-title">Projects</h2>
+        <p class="section-description">A few ways I’ve explored useful ideas through design and technology.</p>
+      </div>
+      <div class="filter-list reveal" role="group" aria-label="Filter projects by category">
+        <button class="filter-button is-selected" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-button" type="button" data-filter="web" aria-pressed="false">Web</button>
+        <button class="filter-button" type="button" data-filter="ai" aria-pressed="false">AI</button>
+        <button class="filter-button" type="button" data-filter="iot" aria-pressed="false">IoT</button>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card reveal" data-category="web">
+          <div class="project-topline"><span class="project-number">01</span><span class="project-type">Web</span></div>
+          <h3>NextStep</h3>
+          <p class="project-subtitle">Personalized Career Guidance Platform</p>
+          <p class="project-description">A responsive frontend with interactive dashboards and quiz workflows that give structured career recommendations. Built for Smart India Hackathon.</p>
+          <div class="tag-list"><span class="skill-tag">HTML</span><span class="skill-tag">CSS</span><span class="skill-tag">JavaScript</span><span class="skill-tag">React</span></div>
+          <!-- TODO: replace with the real repository link -->
+          <a class="project-link" href="https://github.com/SanikaPawar1" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project-card reveal" data-category="ai">
+          <div class="project-topline"><span class="project-number">02</span><span class="project-type">AI</span></div>
+          <h3>Claire</h3>
+          <p class="project-subtitle">AI Accessibility Platform for Dyslexic Learners</p>
+          <p class="project-description">An accessibility-focused interface with readability features, AI summaries, and quizzes designed for dyslexic learners.</p>
+          <div class="tag-list"><span class="skill-tag">AI</span><span class="skill-tag">Accessibility</span><span class="skill-tag">Frontend</span></div>
+          <!-- TODO: replace with the real repository link -->
+          <a class="project-link" href="https://github.com/SanikaPawar1" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project-card reveal" data-category="iot">
+          <div class="project-topline"><span class="project-number">03</span><span class="project-type">IoT</span></div>
+          <h3>Cardiac Rehabilitation System</h3>
+          <p class="project-subtitle">Healthcare IoT Platform</p>
+          <p class="project-description">Responsive dashboards for real-time health monitoring and sensor data visualisation. Contributed to a patent titled “A Personalized Multi-Sensor Cardiac Rehabilitation System”.</p>
+          <div class="tag-list"><span class="skill-tag">IoT</span><span class="skill-tag">Dashboard</span><span class="skill-tag">Data Visualisation</span></div>
+          <!-- TODO: replace with the real repository link -->
+          <a class="project-link" href="https://github.com/SanikaPawar1" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project-card reveal" data-category="ai">
+          <div class="project-topline"><span class="project-number">04</span><span class="project-type">AI</span></div>
+          <h3>DocForge</h3>
+          <p class="project-subtitle">AI Technical Documentation Generator</p>
+          <p class="project-description">A hackathon project that generates technical documentation using AI.</p>
+          <div class="tag-list"><span class="skill-tag">AI</span><span class="skill-tag">Documentation</span><span class="skill-tag">Hackathon</span></div>
+          <!-- TODO: replace with the real repository link -->
+          <a class="project-link" href="https://github.com/SanikaPawar1" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <!-- A simple vertical timeline describes the internship. -->
+    <section class="content-section section-soft" id="experience" aria-labelledby="experience-title">
+      <div class="page-container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Where I’ve contributed</p>
+          <h2 class="section-title" id="experience-title">Experience</h2>
+        </div>
+        <article class="timeline-card reveal">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-heading">
+            <div><h3>UI/UX Intern</h3><p class="timeline-company">Cyber Paradox · Pune</p></div>
+            <p class="timeline-date">July 2025 – October 2025</p>
+          </div>
+          <ul class="experience-list">
+            <li>Designed UI/UX workflows, wireframes, and visual assets for a startup MVP.</li>
+            <li>Worked on icons, colour palette, error page interfaces, and responsive UX.</li>
+            <li>Researched modern UI references on Behance and AI-based design tools.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Achievements are presented as small, readable cards. -->
+    <section class="content-section page-container" id="achievements" aria-labelledby="achievements-title">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Milestones along the way</p>
+        <h2 class="section-title" id="achievements-title">Achievements</h2>
+      </div>
+      <div class="achievements-grid">
+        <article class="achievement-card reveal"><span class="achievement-icon" aria-hidden="true">✦</span><h3>Finalist, GENAITHON 2K25</h3></article>
+        <article class="achievement-card reveal"><span class="achievement-icon" aria-hidden="true">✦</span><h3>Selected for Smart India Hackathon 2025 (PPT round)</h3></article>
+        <article class="achievement-card reveal"><span class="achievement-icon" aria-hidden="true">✦</span><h3>Published in IEEE (2024): Smart Cart Using Analog Circuit</h3></article>
+        <article class="achievement-card reveal"><span class="achievement-icon" aria-hidden="true">✦</span><h3>IBM Full Stack Software Developer Certification</h3></article>
+        <article class="achievement-card reveal"><span class="achievement-icon" aria-hidden="true">✦</span><h3>Design Team Head, WEC Club</h3></article>
+        <article class="achievement-card reveal"><span class="achievement-icon" aria-hidden="true">✦</span><h3>1st Prize, Firodiya Karandak 2024 (Rubik’s Cube Art)</h3></article>
+      </div>
+    </section>
+
+    <!-- Contact provides direct email and professional profile links. -->
+    <section class="content-section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="page-container contact-content reveal">
+        <p class="section-kicker">Let’s connect</p>
+        <h2 class="section-title" id="contact-title">Have a good idea in mind?</h2>
+        <p class="contact-intro">I’m open to internships and entry-level opportunities. Feel free to get in touch.</p>
+        <a class="contact-email" href="mailto:sanika.pawar@example.com	">sanika.pawar@example.com</a>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:sanika.pawar@example.com	">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3zM3 6l9 7 9-7"></path></svg>
+            Email Me
+          </a>
+          <a class="button button-secondary" href="assets/Resume_Sanika_Pawar.pdf" download>Download Resume</a>
+        </div>
+        <div class="social-links" aria-label="Social profiles">
+          <a class="social-link" href="https://github.com/SanikaPawar1" target="_blank" rel="noopener noreferrer" aria-label="Visit Sanika Pawar on GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 6v-3.9a3.4 3.4 0 0 0-.9-2.7c3-.3 6.1-1.5 6.1-6.7a5.2 5.2 0 0 0-1.4-3.6 4.8 4.8 0 0 0-.1-3.6S17.5 1.2 15 3a13.3 13.3 0 0 0-7 0C5.5 1.2 4.3 1.5 4.3 1.5a4.8 4.8 0 0 0-.1 3.6 5.2 5.2 0 0 0-1.4 3.6c0 5.2 3.1 6.4 6.1 6.7A3.4 3.4 0 0 0 8 18v4"></path></svg>
+            <span>GitHub</span>
+          </a>
+          <a class="social-link" href="https://www.linkedin.com	" target="_blank" rel="noopener noreferrer" aria-label="Visit Sanika Pawar on LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v11M4 4v.01M9 20v-6a4 4 0 0 1 8 0v6M9 10v10M2 2h20v20H2z"></path></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a class="social-link" href="mailto:sanika.pawar@example.com	" aria-label="Email Sanika Pawar">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3zM3 6l9 7 9-7"></path></svg>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- The footer includes a second way to return to the top of the page. -->
+  <footer class="site-footer">
+    <div class="page-container footer-content">
+      <p>© 2026 Sanika Pawar. Made with care.</p>
+      <a class="back-to-top-link" href="#home">Back to top <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <!-- This floating control appears after the visitor scrolls down the page. -->
+  <button class="back-to-top-button icon-button" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 14 6-6 6 6"></path></svg>
+  </button>
+</body>
+</html>
