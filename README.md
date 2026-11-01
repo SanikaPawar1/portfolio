@@ -1,5 +1,7 @@
 # Sanika Pawar — Portfolio
 
+Live site: https://sanikapawar1.github.io/portfolio/
+
 A calm, responsive personal portfolio for Sanika Pawar, an aspiring full-stack developer, UI/UX designer, and AI-curious problem solver. It presents her introduction, education, skills, selected projects, internship experience, achievements, resume, and contact links.
 
 ## Features
